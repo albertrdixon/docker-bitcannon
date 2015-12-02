@@ -3,7 +3,7 @@ MAINTAINER Albert Dixon <albert@dixon.rocks>
 
 EXPOSE 2025
 WORKDIR /bitcannon
-CMD ["bitcannon"]
+CMD ["./bitcannon"]
 RUN useradd -M bc \
     && usermod -L bc \
     && chown -R bc:bc /bitcannon
