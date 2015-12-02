@@ -1,0 +1,27 @@
+{
+  "mongo": "mongo",
+  "bitcannonPort": "2025",
+  "scrapeEnabled": true,
+  "scrapeDelay": 0,
+  "trackers": [
+    "udp://open.demonii.com:1337",
+    "udp://tracker.istole.it:80",
+    "udp://tracker.openbittorrent.com:80",
+    "udp://tracker.publicbt.com:80",
+    "udp://tracker.coppersurfer.tk:6969",
+    "udp://tracker.leechers-paradise.org:6969",
+    "udp://exodus.desync.com:6969"
+  ],
+  "archives": [{
+    "name": "KickAssTorrents",
+    "url": "https://kickass.so/hourlydump.txt.gz",
+    "frequency": 3600
+  }, {
+    "name": "Demonoid",
+    "url": "http://www.demonoid.pw/api/demonoid24h.txt.gz",
+    "frequency": 86400
+  }, {
+    "name": "BitSnoop",
+    "url": "http://bitsnoop.com/api/latest_tz.php?t=all"
+  }]
+}
