@@ -23,4 +23,5 @@ ADD config.json.tmpl  /templates/
 ADD bitcannon-v0.1.1  /bitcannon/bitcannon
 
 ENV USER_HASH=examplehash \
-    MONGO_HOST=mongo
+    MONGO_HOST=mongo \
+    KAT_URL=kat.cr

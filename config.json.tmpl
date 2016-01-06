@@ -14,7 +14,7 @@
   ],
   "archives": [{
     "name": "KickAssTorrents",
-    "url": "https://kat.cr/api/get_dump/hourly/?verified=1&userhash={{ .Env.USER_HASH }}",
+    "url": "https://{{ .Env.KAT_URL }}/api/get_dump/hourly/?verified=1&userhash={{ .Env.USER_HASH }}",
     "frequency": 3600
   }, {
     "name": "Demonoid",
