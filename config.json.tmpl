@@ -1,5 +1,5 @@
 {
-  "mongo": "mongo",
+  "mongo": "{{ .Env.MONGO_HOST }}",
   "bitcannonPort": "2025",
   "scrapeEnabled": true,
   "scrapeDelay": 0,
@@ -14,7 +14,7 @@
   ],
   "archives": [{
     "name": "KickAssTorrents",
-    "url": "https://kickass.so/hourlydump.txt.gz",
+    "url": "https://kat.cr/api/get_dump/hourly/?verified=1&userhash={{ .Env.USER_HASH }}",
     "frequency": 3600
   }, {
     "name": "Demonoid",
@@ -25,3 +25,4 @@
     "url": "http://bitsnoop.com/api/latest_tz.php?t=all"
   }]
 }
+{{ path "/bitcannon" }}
